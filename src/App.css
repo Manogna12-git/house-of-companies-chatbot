@@ -1,0 +1,50 @@
+/* App.css */
+
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+}
+
+/* Main App container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  position: relative;
+}
+
+/* App container - DON'T apply flex or height styles */
+.app-container {
+  /* Let the chatbot handle its own positioning */
+  /* Remove all flex and height properties */
+}
+
+/* 
+  IMPORTANT: Don't override .chatbot-container, .chat-messages, or .chatbot-footer
+  in App.css. These are styled in HouseOfCompaniesChatbot.css
+*/
+
+/* Utility classes that won't conflict */
+.text-center {
+  text-align: center;
+}
+
+/* Custom hover effects for other elements (not chatbot) */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
